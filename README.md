@@ -65,7 +65,8 @@ For every validated claim, a JIRA ticket is automatically raised with the follow
 -Reporter: User’s email address
 -Description: Extracted claim details and attachments
 -Status: Initially set to “Submitted”
-![image alt]()
+![image alt](https://github.com/sujal-debug/Policy_IQ/blob/cce686cb18e90e6e74d7a1d9c1902c63de47e04d/jira.png)
+
 # About
 
 Developed by Sujal Puneyani during internship at Statusneo.
