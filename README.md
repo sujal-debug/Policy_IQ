@@ -35,6 +35,27 @@ The system:
 | Ticketing System     | JIRA                                                        |
 | AI Layer             | Retrieval-Augmented Generation (LLM)                        |
 
+# Snapshots:
+
+
+1. Incoming Claim Email
+
+The process begins when a registered user sends a claim request or query via email.
+The system, integrated with Microsoft Outlook using the O365 API, automatically fetches new messages from the inbox along with their attachments (such as invoices, claim forms, or policy documents).
+
+2. Claim Data Extraction & Processing
+Extracts data from PDF attachments and updates PostgreSQL database.
+
+
+
+3. Automated Acknowledgment & LLM-Based Reply
+The LLM (RAG system) sends a policy-aware reply back to the user.
+
+
+
+4. JIRA Ticket Creation
+Automatically creates a JIRA ticket with claim description and attachments.
+
 # About
 
 Developed by Sujal Puneyani during internship at Statusneo.
@@ -43,3 +64,5 @@ Focused on automating insurance workflows using AI and scalable backend systems.
 📧 Contact: sujalpuneyani123@gmail.com
 🌐 LinkedIn: https://in.linkedin.com/in/sujal-puneyani-a3a743268
 💻 GitHub Repo: https://github.com/sujal-debug/Policy_IQ
+
+
