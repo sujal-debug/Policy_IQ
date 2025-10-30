@@ -47,7 +47,7 @@ The system, integrated with Microsoft Outlook using the O365 API, automatically 
 2. Claim Data Extraction & Processing
 Once a valid email is identified, the system extracts relevant data (like claim ID, policy number, and customer name) from the email body and attachments (PDFs) using PyPDF2 and regex-based parsing.
 The claim information is then stored and updated in PostgreSQL, ensuring a structured and trackable record of every claim submission
-![image alt]()
+![image alt](https://github.com/sujal-debug/Policy_IQ/blob/8c27181d3bf544b1a1d5d8b4ca4e386a2ac11714/frontend.png)
 
 
 3. Automated Acknowledgment & LLM-Based Reply
