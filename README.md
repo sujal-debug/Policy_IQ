@@ -42,20 +42,30 @@ The system:
 
 The process begins when a registered user sends a claim request or query via email.
 The system, integrated with Microsoft Outlook using the O365 API, automatically fetches new messages from the inbox along with their attachments (such as invoices, claim forms, or policy documents).
+![image alt]()
 
 2. Claim Data Extraction & Processing
-Extracts data from PDF attachments and updates PostgreSQL database.
-
+Once a valid email is identified, the system extracts relevant data (like claim ID, policy number, and customer name) from the email body and attachments (PDFs) using PyPDF2 and regex-based parsing.
+The claim information is then stored and updated in PostgreSQL, ensuring a structured and trackable record of every claim submission
+![image alt]()
 
 
 3. Automated Acknowledgment & LLM-Based Reply
-The LLM (RAG system) sends a policy-aware reply back to the user.
-
+After validation, the system sends an automated response back to the user.
+Using a Retrieval-Augmented Generation (RAG) system, it:
+-Fetches relevant policy details from the knowledge base
+-Uses an LLM to generate a context-aware reply
+-Ensures responses are accurate, personalized, and aligned with internal policies
+![image alt]()
 
 
 4. JIRA Ticket Creation
-Automatically creates a JIRA ticket with claim description and attachments.
-
+For every validated claim, a JIRA ticket is automatically raised with the following details:
+-Ticket ID: Auto-generated unique identifier
+-Reporter: User’s email address
+-Description: Extracted claim details and attachments
+-Status: Initially set to “Submitted”
+![image alt]()
 # About
 
 Developed by Sujal Puneyani during internship at Statusneo.
