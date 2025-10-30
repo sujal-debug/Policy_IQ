@@ -56,7 +56,7 @@ Using a Retrieval-Augmented Generation (RAG) system, it:
 -Fetches relevant policy details from the knowledge base
 -Uses an LLM to generate a context-aware reply
 -Ensures responses are accurate, personalized, and aligned with internal policies
-![image alt](https://github.com/sujal-debug/Policy_IQ/blob/96420c4c1504464b2283e8cbc67910baca8562f9/t_c.png)
+![image alt](https://github.com/sujal-debug/Policy_IQ/blob/2f435991a993c1339520ba404ec453be90d1d3a0/new.png)
 
 
 4. JIRA Ticket Creation
