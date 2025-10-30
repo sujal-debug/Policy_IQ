@@ -42,7 +42,7 @@ The system:
 
 The process begins when a registered user sends a claim request or query via email.
 The system, integrated with Microsoft Outlook using the O365 API, automatically fetches new messages from the inbox along with their attachments (such as invoices, claim forms, or policy documents).
-![image alt]()
+![image alt](https://github.com/sujal-debug/Policy_IQ/blob/840bbe55eb547cb1f754571be92697a83af48d51/i_m.png)
 
 2. Claim Data Extraction & Processing
 Once a valid email is identified, the system extracts relevant data (like claim ID, policy number, and customer name) from the email body and attachments (PDFs) using PyPDF2 and regex-based parsing.
